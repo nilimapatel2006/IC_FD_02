@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111827;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.section {
+  padding: 120px 20px;
+  text-align: center;
+  scroll-margin-top: 100px;
+}
+
+.section-heading {
+  display: inline-block;
+  padding: 12px 35px;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: white;
+  border-radius: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.section-content {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dark {
+  background: #1f2933;
+  color: white;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.dark .card {
+  color: black;
+}
+
+.popular {
+  border: 2px solid #2563eb;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: none;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #38bdf8;
+  border: none;
+  cursor: pointer;
+}
+
+#error {
+  margin-top: 10px;
+  color: red;
+}
+
+footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .section-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
